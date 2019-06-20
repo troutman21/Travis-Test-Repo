@@ -3,5 +3,5 @@ node_js:
   - "stable"
 # before_script:
 #   - npm install
-script:
-  - npm run makeCat
+# script:
+#   - npm run makeCat
