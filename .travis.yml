@@ -1,5 +1,7 @@
 language: node_js
-before_script:
-  - npm install
-script:
-  - npm test
+node_js:
+  - "stable"
+# before_script:
+#   - npm install
+# script:
+#   - npm test
