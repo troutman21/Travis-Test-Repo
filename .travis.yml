@@ -3,6 +3,11 @@ node_js:
   - "stable"
 install:
   - npm install
+before_script:
+  - npm run start
 script:
-  - npm run makeCat
   - npm run test
+after_success:
+  - npm run success
+after_failure:
+  -npm run makeCat

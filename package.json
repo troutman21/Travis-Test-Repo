@@ -6,12 +6,14 @@
   "dependencies": {
     "cat-me": "^1.0.3",
     "express": "^4.17.1",
+    "figlet": "^1.2.3",
     "jest": "^24.8.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "jest",
-    "makeCat": "node cat.js"
+    "makeCat": "node cat.js",
+    "success": "node success.js"
   },
   "repository": {
     "type": "git",
