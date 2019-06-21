@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "stable"
+install:
+  - npm install
+before_script:
+  - echo about to run script
+script:
+  - npm run test
+after_success:
+  - npm run success
+after_failure:
+  - npm run makeCat

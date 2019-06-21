@@ -1,0 +1,28 @@
+{
+  "name": "travis-test-repo",
+  "version": "1.0.0",
+  "description": "This repo is used to test the Travis CI/CD process",
+  "main": "index.js",
+  "dependencies": {
+    "cat-me": "^1.0.3",
+    "express": "^4.17.1",
+    "figlet": "^1.2.3",
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "makeCat": "node cat.js",
+    "success": "node success.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troutman21/Travis-Test-Repo.git"
+  },
+  "author": "Phillip Troutman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/troutman21/Travis-Test-Repo/issues"
+  },
+  "homepage": "https://github.com/troutman21/Travis-Test-Repo#readme"
+}
