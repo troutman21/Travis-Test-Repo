@@ -1,3 +1,3 @@
-const multiply = (a, b) => a * b - 10;
+const multiply = (a, b) => a * b;
 
 module.exports = multiply;
