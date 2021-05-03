@@ -20,6 +20,23 @@
     - Point out the Environment Variables.  These will be necessary for connecting to AWS from Travis. You will use particular environment variables to set up CD.
 
 1. __Push code to the repo and show that the Travis processes will build__
-    - 
-Start here again. I think next thing needs to be change something and push to repo to see build happen
+    - Create a new branch and make some small change to it, then commit it and push it to that branch in GitHub. I.e. `git push origin <yourBranchName>`
+    - Once you have done that go into your Travis CI account and show the build logs
+    - Note: that by default your `sum` test will not pass, and because of that an "after_failure" script will run (this prints an asci cat to the Travis CI console 🥴)
+    - Walk the cohort through the [.travis.yml](./.travis.yml) file in the this repo that specifies what to do when a test fails and passes
+      - If it fails a [makeCat](./cat.js) script runs that prints a random asci cat to the console
+      - If it passes a [success](./success.js) script runs that prints a different asci message to the console 🙂 (feel free to change this message to whatever you want)
+
+1. __Update test to pass the test, push again, and merge to show a successful build__
+    - Change the test case in the [sum.test.js](./sum.test.js) file so that it will pass the test script ran by Travis CI
+      - The code should look like this to pass:
+      
+      ```js
+      const sum = require('./sum');
+
+      test('adds 1 + 2 to equal 3', () => {
+        expect(sum(1, 2)).toBe(3);
+      });
+      ```
+    - once you merge the file into the master branch go back to your Travis CI console and show them the build output
 
