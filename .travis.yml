@@ -5,7 +5,6 @@ install:
   - npm install
 before_script:
   - echo about to run script
-  - ls .
 script:
   - npm run test
 after_success:
